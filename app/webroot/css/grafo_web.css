@@ -1,0 +1,586 @@
+@charset "CP850";
+/**
+ * 	CSS Capturador de Datos Para Nodus - Red Social de Investigadores
+ */
+/**
+ * 1. Elementos Generales
+ */
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background: url(../img/main_back.png) #cccccc;
+  color: #444444;
+  font-size: 80%;
+  font-family: 'Abel', sans-serif; }
+
+h1 {
+  font-size: 3em; }
+
+h1, h2, h3 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-shadow: #ccc 0 1px 0; }
+
+div .text input, div .textarea textarea {
+  width: 101%;
+  display: block; }
+
+pre {
+  background: #FC0;
+  font-size: 120%;
+  line-height: 140%;
+  margin-top: 1em;
+  overflow: auto;
+  color: #000; }
+
+/**
+ * 	1.1 Formularios
+ */
+input, textarea, select {
+  padding: 6px;
+  font-size: 70%;
+  background: #ddd;
+  border: solid 1px #ddd;
+  color: #444;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+input:hover, textarea:hover, select:hover {
+  border: solid 1px #ED971B; }
+
+input:focus, textarea:focus, select:focus {
+  border: solid 1px #ED971B;
+  background: #fff;
+  color: #444; }
+
+select {
+  margin: 0 10px 0 10px; }
+
+textarea {
+  width: 100%; }
+
+div.input {
+  margin: 0.5em 0; }
+
+.submit input {
+  border: solid 1px #555; }
+
+.submit input:hover {
+  cursor: pointer;
+  background: #ED971B;
+  color: #000;
+  border: solid 1px #ddd; }
+
+/**
+ * 	2. Contenedores Web
+ */
+.bookmark {
+  height: 730px;
+  padding: 10px 70px 0 55px;
+  width: 256px;
+  height: 730px;
+  background: url(../img/bookmark.png) no-repeat -30px 0; }
+  .bookmark .objetive-description {
+    color: #C4C4C4; }
+    .bookmark .objetive-description a {
+      color: #fff;
+      text-decoration: none; }
+    .bookmark .objetive-description p {
+      margin-top: 10px; }
+  .bookmark h2.objetivo {
+    background: url(../img/linea_objetivo.png) 0 15px no-repeat;
+    display: block;
+    font-size: 120%;
+    font-style: normal;
+    height: 33px;
+    font-weight: lighter;
+    margin-left: -22px;
+    padding-left: 21px; }
+  .bookmark div.bookmark-logo {
+    width: 262px;
+    height: 210px;
+    margin: 0 auto; }
+  .bookmark div.bookmark-logo-normal {
+    background: url(../img/circuls_0.png) no-repeat; }
+  .bookmark div.bookmark-logo-1 {
+    background: url(../img/circuls_1.png) no-repeat; }
+  .bookmark div.bookmark-logo-2 {
+    background: url(../img/circuls_2.png) no-repeat; }
+  .bookmark div.bookmark-logo-3 {
+    background: url(../img/circuls_3.png) no-repeat; }
+
+.user-box {
+  font-size: 115%;
+  height: 49px; }
+  .user-box input {
+    height: 20px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    margin: 5px 5px 0;
+    border: solid 1px #777777;
+    background: #666666;
+    color: #C5C5C5;
+    font-size: 100%; }
+  .user-box input:hover {
+    border: solid 1px #444; }
+  .user-box input:focus {
+    border: solid 1px #444;
+    background: #ddd;
+    color: #000; }
+  .user-box .login-box-submit input {
+    background: url(../img/login.png) no-repeat -16px 0 transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    margin-top: 8px;
+    text-indent: -999px;
+    width: 56px; }
+  .user-box .login-box-submit input:hover {
+    background: url(../img/login.png) no-repeat -16px -44px transparent; }
+
+#user-logged li {
+  list-style: none;
+  float: left; }
+  #user-logged li .nombre-logeado {
+    color: #ccc;
+    display: block;
+    font-size: 1.2em;
+    margin: 9px 20px 9px 0;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #333; }
+  #user-logged li .nombre-logeado:hover {
+    text-decoration: underline; }
+  #user-logged li .boton-logout {
+    display: block;
+    height: 28px;
+    margin-top: 8px;
+    text-indent: -9999px;
+    width: 70px;
+    background: url(../img/signout.png) no-repeat -16px 0 transparent; }
+  #user-logged li .boton-logout:hover {
+    background: url(../img/signout.png) no-repeat -16px -44px; }
+
+#header-container {
+  background: url(../img/degradado_superior.png) transparent repeat-x;
+  height: 70px;
+  position: relative;
+  min-width: 1070px;
+  color: #F7F7E1; }
+  #header-container .contenedor-contenido-bookmark {
+    width: 1035px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    height: 140%; }
+
+.content {
+  color: #555;
+  font-size: 1.5em;
+  margin-top: 100px;
+  position: relative; }
+
+.pages-wrapper {
+  position: relative;
+  border: #ED971B solid 2px;
+  margin-left: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px 40px 22px 22px;
+  width: 534px;
+  min-height: 300px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
+
+.page-upload-image {
+  border: #ED971B solid 2px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px 40px 22px 22px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 150%; }
+
+div.botonFormularioAtras {
+  position: absolute;
+  top: 160px;
+  left: -32px; }
+  div.botonFormularioAtras a {
+    display: block;
+    width: 23px;
+    height: 52px;
+    background: url(../img/flecha_atras.png) no-repeat;
+    text-indent: -9999px; }
+  div.botonFormularioAtras a:hover {
+    background: url(../img/flecha_atras_hover.png) no-repeat; }
+
+div.botonFormularioAdelante {
+  position: absolute;
+  top: 160px;
+  right: -32px; }
+  div.botonFormularioAdelante a {
+    display: block;
+    width: 23px;
+    height: 52px;
+    background: url(../img/flecha_siguiente.png) no-repeat;
+    text-indent: -9999px; }
+  div.botonFormularioAdelante a:hover {
+    background: url(../img/flecha_siguiente_hover.png) no-repeat; }
+
+#contendor-footer {
+  background: url("../img/linea_barralogos.png") repeat-x scroll 0 18px transparent;
+  height: 80px; }
+  #contendor-footer .footer-logos {
+    background: url("../img/barra_logos.png") no-repeat;
+    width: 356px;
+    margin-right: 50px; }
+  #contendor-footer ul li {
+    float: left;
+    margin: 5px;
+    list-style: none; }
+    #contendor-footer ul li a {
+      display: block;
+      text-indent: -9999px;
+      margin-left: 10px; }
+    #contendor-footer ul li .footer-conacyt-logo {
+      width: 70px;
+      height: 43px;
+      margin-top: -2px;
+      background: url("../img/logo_conacyt.png") no-repeat; }
+    #contendor-footer ul li .footer-texmonterrey-logo {
+      width: 116px;
+      height: 43px;
+      margin-top: -3px;
+      background: url("../img/logo_itesm.png") no-repeat; }
+    #contendor-footer ul li .footer-nodus-logo {
+      width: 91px;
+      height: 36px;
+      margin-top: 4px;
+      background: url("../img/logo_nouds.png") no-repeat; }
+
+/**
+ * 	2.1 Páginas
+ */
+/* Element menu_datos */
+#menu_datos {
+  margin: 0 auto;
+  margin-bottom: 1em;
+  width: 110px; }
+  #menu_datos ul {
+    margin: 0 auto; }
+    #menu_datos ul li {
+      list-style: none;
+      display: block;
+      float: left; }
+      #menu_datos ul li a {
+        height: 26px;
+        width: 26px;
+        text-indent: -2000px;
+        display: block;
+        float: left;
+        background: url(../img/dot_menu_withoutfill.png) no-repeat;
+        margin-left: -1px; }
+      #menu_datos ul li a:hover {
+        background: url(../img/dot_menu_fill_white.png) no-repeat; }
+      #menu_datos ul li a.activo {
+        background: url(../img/dot_menu_fill.png) no-repeat;
+        margin-left: -1px;
+        margin-top: -1px;
+        cursor: default; }
+    #menu_datos ul .line {
+      height: 6px;
+      width: 18px;
+      margin-top: 10px;
+      margin-left: -1px;
+      background: url(../img/line_menu.png) no-repeat; }
+
+/* Privacidad */
+.text-area-privacidad {
+  width: 101%;
+  font-size: 14px; }
+
+/* Publicaciones */
+#nuevas-publicaciones {
+  margin-bottom: 11px; }
+
+#wrapper-publicaciones {
+  min-width: 535px; }
+
+div.box-publicacion {
+  background: #ccc;
+  padding: 10px;
+  margin: 0 0 5px 0;
+  position: relative; }
+  div.box-publicacion div.tool-publicacion {
+    position: absolute;
+    top: 5px;
+    right: 5px; }
+    div.box-publicacion div.tool-publicacion a {
+      text-decoration: none;
+      font-size: 80%;
+      display: block;
+      float: left;
+      margin-right: 5px; }
+  div.box-publicacion li {
+    list-style: none; }
+  div.box-publicacion .titulo-publicacion {
+    font-weight: bold;
+    font-size: 90%; }
+  div.box-publicacion .abstract-publicacion {
+    background-color: #fff;
+    opacity: 0.6;
+    font-size: 80%;
+    margin: 10px;
+    padding: 5px; }
+
+#agregarPublicacionBoton {
+  margin: 10px; }
+  #agregarPublicacionBoton a {
+    display: block;
+    background: #000;
+    opacity: 0.8;
+    text-decoration: none;
+    padding: 6px;
+    color: #fff;
+    font-size: 80%;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px; }
+
+#autoresPublicaciones {
+  position: relative; }
+  #autoresPublicaciones input {
+    width: 70%;
+    display: inline; }
+  #autoresPublicaciones label {
+    display: block; }
+  #autoresPublicaciones select {
+    width: 75%; }
+  #autoresPublicaciones input, #autoresPublicaciones select {
+    margin: 10px 0 0 0; }
+  #autoresPublicaciones .autor-registrado {
+    width: 45%;
+    margin: 0 0 0 40px;
+    padding: 5px; }
+  #autoresPublicaciones .autor-no-registrado {
+    margin: 0 0 0 10px;
+    width: 45%;
+    padding: 5px; }
+  #autoresPublicaciones .boton-agregar, #autoresPublicaciones .boton-remover {
+    width: 125px;
+    margin-left: 5px;
+    cursor: pointer; }
+
+#mensajeTituloPublicacion {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  position: absolute;
+  top: 0px;
+  right: -100px;
+  font-size: 70%;
+  display: none; }
+  #mensajeTituloPublicacion ul li {
+    list-style: none; }
+    #mensajeTituloPublicacion ul li span {
+      font-style: italic; }
+
+#contenedor-autores {
+  margin: 10px 16px 10px 0;
+  font-size: 80%; }
+  #contenedor-autores li {
+    list-style: none;
+    padding: 5px;
+    margin-top: 5px;
+    background: #ddd;
+    color: #444;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px; }
+  #contenedor-autores li:hover {
+    background: #eee; }
+
+#contenedor-autores ul li a {
+  margin-left: 20px; }
+
+/**
+ * 	4. Extras
+ */
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.cl {
+  clear: left; }
+
+.cr {
+  clear: right; }
+
+.cb {
+  clear: both; }
+
+.oculto {
+  display: none; }
+
+.cursiva {
+  font-style: italic; }
+
+.redondar5px {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }
+
+/**
+ * 	4.1 Extras Contenidos
+ */
+/* Link-Boton */
+div input.botonSubmit {
+  background: #DDD;
+  border: 1px solid #555;
+  color: #444;
+  font-size: 70%;
+  margin-left: 10px;
+  padding: 6px;
+  text-decoration: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+div input.botonSubmit:hover {
+  background: #ED971B;
+  color: #000;
+  cursor: pointer;
+  border: solid 1px #ddd; }
+
+/* Leyenda fotografia */
+.leyenda-fotografia {
+  font-size: 70%;
+  display: block; }
+
+/* Gráfica Inicio */
+#grafico-inicio {
+  position: relative;
+  margin-top: -50px; }
+  #grafico-inicio .acotacion {
+    height: 10px;
+    margin: 8px 8px 0 0;
+    width: 10px; }
+
+#valorCantidadGrafica {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 6px;
+  top: 550px;
+  color: #FFFFFF;
+  display: none;
+  height: 47px;
+  padding: 20px;
+  position: absolute;
+  right: -340px; }
+  #valorCantidadGrafica ul li {
+    list-style: none; }
+
+/* Logo */
+a.grafo-logo {
+  background: url(../img/grafo_logo2.png) no-repeat;
+  text-indent: -999px;
+  margin: 2em 0;
+  display: block;
+  width: 267px;
+  height: 32px; }
+
+/* Datos Personales */
+.principal-contenedor-imagen-perfil {
+  position: relative; }
+
+.contenedor-imagen-perfil {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px; }
+
+#imagen-perfil {
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin: 4px auto;
+  padding: 5px;
+  background: #ccc;
+  border: solid 3px #ED971B;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+#imagen-perfil:hover {
+  background: #ddd; }
+
+/* Overlay */
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000 no-repeat scroll center center; }
+
+#lightbox {
+  position: absolute;
+  z-index: 10; }
+
+#cerrarLightBox {
+  color: #000000;
+  display: block;
+  position: absolute;
+  right: 10px;
+  text-decoration: none;
+  top: 4px; }
+
+#cerrarLightBox:hover {
+  text-decoration: underline; }
+
+/* Mensajes */
+#flashMessage, #authMessage {
+  width: 75%;
+  color: #fff;
+  margin: 40px auto;
+  text-align: center;
+  padding: 5px; }
+
+div.mensaje-error, div.message {
+  background: #9E2010; }
+
+div.mensaje-ok {
+  background: #085E5D; }
+
+/* Auto complementado */
+ul.auto-complete-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 100;
+  max-height: 250px;
+  overflow: auto; }
+
+ul.auto-complete-list li {
+  list-style-type: none;
+  margin: 0;
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.9);
+  color: #ddd;
+  border: 1px solid black;
+  cursor: pointer;
+  font-family: 'Abel', sans-serif; }
+
+ul.auto-complete-list li.auto-complete-list-rollover {
+  background: black; }
+
+ul.auto-complete-list .auto-complete-striped {
+  background: rgba(0, 0, 0, 0.9); }

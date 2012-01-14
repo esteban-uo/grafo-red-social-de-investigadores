@@ -1,0 +1,19 @@
+###
+# Configuraciones de Eclipse/Aptana
+##
+.project
+.cache
+.cache/*
+.settings
+.settings/*
+
+###
+# CakePHP
+###
+/cake/test
+
+###
+# OSX
+##
+.DS_Store
+
